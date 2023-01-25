@@ -37,7 +37,7 @@ COPY scripts/docker-artalk-runner.sh /usr/bin/artalk
 RUN chmod +x /usr/bin/artalk \
     && ln -s /usr/bin/artalk /usr/bin/artalk-go
 
-COPY https://cdn.jsdelivr.net/gh/612901/artalkgo@main/artalk-go.example.yml /usr/bin/artalk
+COPY ./artalk-go.yml /usr/bin/artalk
 
 VOLUME ["/data"]
 
