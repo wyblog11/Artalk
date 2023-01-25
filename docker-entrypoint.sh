@@ -17,7 +17,7 @@ if [ "$1" != 'gen' ] && ( [ ! -e /data/artalk.yml ] && [ ! -e /data/artalk-go.ym
         echo "$(date) [info] Copy config file from '/conf.yml' to '/data/artalk.yml' for upgrade"
     else
         # Generate new config
-        artalk gen conf /data/artalk.yml
+        artalk gen conf /data/artalk-go.yml
         echo "$(date) [info] Generate new config file to '/data/artalk.yml'"
     fi
 fi
